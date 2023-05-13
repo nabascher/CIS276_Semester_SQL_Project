@@ -1,5 +1,7 @@
 # CIS276_Semester_SQL_Project
 A repository of the SQL scripts that I used with my proximity analysis spatial database project.  
+The project is a proximity analysis for identifying features near a buffered survey area polygon located in the City of Scottsdale, Arizona.
+
 1. [Database Diagram](https://github.com/nabascher/CIS276_Semester_SQL_Project/blob/main/Database_Diagram.png):  Shows the diagram of the spatial database that I created in SQL Server.  The connectors represent a spatial relationship rather than a PK/FK relationship.  spatial_ref_sys is useful metadata about the coordinate system that is added when running ogr2ogr to import data.
 2. [Ogr2ogr_Insert_Shapefiles](https://github.com/nabascher/CIS276_Semester_SQL_Project/blob/main/Ogr2ogr_Insert_Shapefiles.txt): A handy tool for uploading all shapefiles in a specific directory to SQL Server.
 3. [StoredProcedure_InsertBuffer](https://github.com/nabascher/CIS276_Semester_SQL_Project/blob/main/StoredProcedure_InsertBuffer.sql): A stored procedure for inserting buffers based on a user-inputted width into the survey area dataset.
