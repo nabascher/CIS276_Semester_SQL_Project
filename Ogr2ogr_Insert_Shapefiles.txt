@@ -1,0 +1,1 @@
+for %f in (C:\Users\NateB\Desktop\Shapefiles_For_Upload\*.shp) do ogr2ogr -f MSSQLSpatial "MSSQL:server=DESKTOP-O8MJJ65\SQLEXPRESS;database=Database_Project;trusted_connection=yes" "%f" -t_srs "EPSG:2223" -nln dbo.%~nf -nlt PROMOTE_TO_MULTI -overwrite
