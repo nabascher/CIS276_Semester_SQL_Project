@@ -12,7 +12,7 @@ AS
 		CAST(HECTARES AS numeric(38, 2)) AS Hectares, CONCAT(section_na, ' ', quadrant) AS TRS_Label
 	FROM survey_area sa, LandOwnership lo JOIN QuarterSections q
 		ON lo.Shape.STIntersects(q.Shape) = 1
-	WHERE lo.Shape.STDistance(sa.Shape) < 26400
+	WHERE lo.Shape.STDistance(sa.Shape) < 2640
 	AND CATEGORY <> 'Private'
 	AND ADMIN_TYPE IS NOT NULL
 
