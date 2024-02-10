@@ -1,9 +1,9 @@
 # CIS276_Semester_SQL_Project
 A repository of the SQL scripts that I used with my proximity analysis spatial database project.  
 
-The project is a proximity analysis for identifying features near a buffered survey area polygon located in the City of Scottsdale, Arizona.
-
 I conducted this final project for a SQL Server college course with the intention to explore SQL Server and its capabilities for managing spatial data. 
+
+The project is a proximity analysis for identifying features near a buffered survey area polygon located in the City of Scottsdale, Arizona.
 
 I used GDAL to load the spatial data into SQL Server. 
 
